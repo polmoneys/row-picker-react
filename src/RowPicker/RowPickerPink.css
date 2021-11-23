@@ -1,0 +1,35 @@
+html.pink-theme {
+    accent-color: #a786df;
+    --accent: #a786df;
+
+    --bg: #f9f8fc;
+    --bg-hover: #d9d4e7;
+    --bg-focus: #d9d4e7;
+    background-color: #fec7d7;
+
+    --color: #0e172c;
+    --color-light: var(--white);
+    --color-hover: var(--gray-400);
+    --color-focus: var(--gray-400);
+
+    --border-color: var(--gray-400);
+    --border-color-hover: var(--gray-400);
+}
+html.pink-theme body {
+    background-color: #fec7d7;
+}
+
+html.pink-theme [rp-data-avatar] {
+    background: linear-gradient(#000 0 0) padding-box, linear-gradient(#a786df, #ff00ff) border-box;
+}
+html.pink-theme svg.fx-brightness {
+    filter: none !important;
+}
+
+html.pink-theme .rp-switch {
+    filter: none !important;
+}
+html.pink-theme [data-donut=''] {
+    --c: #a786df !important;
+    filter: none !important;
+}

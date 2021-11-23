@@ -1,0 +1,113 @@
+.root {
+    cursor: pointer;
+    text-transform: none;
+    overflow: visible;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-appearance: button;
+    appearance: none;
+    margin: 0;
+    border-radius: 0;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    outline: var(--row-picker-border-width) solid var(--row-picker-border);
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    padding: 0 var(--rp-padding-min);
+    min-height: var(--rp-min-height);
+}
+
+.root:focus {
+    outline: var(--row-picker-border-width) solid var(--error-200) !important;
+}
+
+@media (prefers-reduced-motion: no-preferences) {
+    .root {
+        transition: all var(--row-picker-animation-duration-default) ease;
+    }
+}
+
+.root::-moz-focus-inner {
+    border: 0;
+}
+
+.root:disabled,
+.root[disabled] {
+    opacity: 0.8;
+    cursor: no-drop;
+}
+
+@media screen and (forced-colors: active) {
+    /* https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/ */
+    .root {
+        forced-color-adjust: none;
+        color: CanvasText;
+    }
+}
+
+/*
+Variants
+*/
+
+.buttonDialog {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--row-picker-min-height);
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.buttonClose {
+    justify-content: flex-end;
+    align-items: center;
+    border: none !important;
+    outline: none !important;
+    text-align: unset;
+    font-size: 100%;
+}
+.buttonGhost {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.buttonClose:focus {
+    outline: var(--row-picker-border-width) solid var(--error-200) !important;
+}
+
+.buttonClose > span:first-of-type {
+    opacity: 0;
+}
+
+.buttonFilled {
+    background-color: var(--bg-light) !important;
+    font-size: 80%;
+    text-transform: uppercase;
+    min-width: var(--rp-min-height);
+}
+.buttonFilled:hover,
+.buttonFilled:focus {
+    filter: brightness(0.9);
+}
+
+.buttonIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 48px;
+}
+
+.iconStable {
+    display: inline-flex;
+    flex-shrink: 0;
+}

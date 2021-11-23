@@ -1,0 +1,41 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+        accent-color: var(--accent-200);
+        --accent: var(--accent-200);
+        --bg: var(--gray-200);
+        --bg-light: var(--gray-300);
+        --color: var(--white);
+        --border-color: var(--gray-100);
+        --shadow-000: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .outer button[disabled] {
+        color: var(--gray-800);
+    }
+    .outer button[disabled] svg {
+        stroke: var(--gray-800) !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .popContent {
+        background-color: var(--gray-400);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .select .button.action:focus {
+        background-color: var(--gray-600);
+        color: var(--white);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .switch button::before {
+        background: var(--gray-600);
+        border: 0.2em solid var(--gray-600);
+    }
+}

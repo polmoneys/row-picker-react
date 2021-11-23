@@ -1,0 +1,74 @@
+{
+    "name": "row-picker-react",
+    "description": "Row Picker component for React",
+    "version": "1.0.0",
+    "files": [
+        "dist"
+    ],
+    "types": "./dist/types.d.ts",
+    "main": "./dist/row-picker.umd.js",
+    "module": "./dist/row-picker.es.js",
+    "homepage": "https://github.com/polmoneys/row-picker-react",
+    "bugs": "https://github.com/polmoneys/row-picker-react/issues",
+    "author": "Pol Moneys (http://polmoneys.com/)",
+    "exports": {
+        ".": {
+            "import": "./dist/row-picker.es.js",
+            "require": "./dist/row-picker.umd.js"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "serve": "vite preview",
+        "test": "jest --runInBand --watchAll"
+    },
+    "dependencies": {
+        "@headlessui/react": "^1.4.2",
+        "@reach/checkbox": "^0.16.0",
+        "@reach/tabs": "^0.16.4",
+        "@react-aria/focus": "^3.5.0",
+        "@react-aria/interactions": "^3.6.0",
+        "d3-array": "^3.1.1",
+        "d3-scale": "^4.0.2",
+        "d3-shape": "^3.0.1",
+        "d3-time-format": "^4.0.0",
+        "headlessui": "^0.0.0",
+        "lodash.isnil": "^4.0.0",
+        "react": "^17.0.0",
+        "react-dom": "^17.0.0",
+        "react-icons": "^4.3.1",
+        "react-physics-dragger": "^2.0.0",
+        "resize-observer-polyfill": "^1.5.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.0",
+        "@babel/preset-env": "^7.16.0",
+        "@babel/preset-react": "^7.16.0",
+        "@rollup/plugin-commonjs": "^21.0.1",
+        "@rollup/plugin-node-resolve": "^13.0.6",
+        "@rollup/plugin-typescript": "^8.3.0",
+        "@testing-library/jest-dom": "^5.15.0",
+        "@testing-library/react": "^12.1.2",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/d3-array": "^3.0.2",
+        "@types/d3-scale": "^4.0.2",
+        "@types/d3-shape": "^3.0.2",
+        "@types/d3-time-format": "^4.0.0",
+        "@types/jest": "^27.0.2",
+        "@types/lodash.isnil": "^4.0.6",
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "@vitejs/plugin-react": "^1.0.0",
+        "babel-jest": "^27.3.1",
+        "jest": "^27.3.1",
+        "path": "^0.12.7",
+        "rollup": "^2.60.1",
+        "rollup-plugin-dts": "^4.0.1",
+        "ts-jest": "^27.0.7",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.4.4",
+        "vite": "^2.6.4"
+    },
+    "license": "MIT"
+}

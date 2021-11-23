@@ -1,0 +1,27 @@
+.root {
+}
+
+/* .root button {
+    padding: 1em;
+    width: 52px;
+    height: 52px;
+    justu
+} */
+
+.active {
+    background-color: var(--accent-000) !important;
+    color: var(--accent-200) !important;
+    filter: hue-rotate(90deg);
+    font-weight: bold;
+}
+.active:hover,
+.active:focus {
+    filter: hue-rotate(90deg);
+}
+
+/* @media (pointer: coarse) {
+    .root button {
+        width: 72px;
+        height: 72px;
+    }
+} */

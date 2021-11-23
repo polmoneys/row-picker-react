@@ -1,0 +1,9 @@
+.link {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.link svg {
+    margin-right: calc(var(--row-picker-padding) * 0.2);
+}

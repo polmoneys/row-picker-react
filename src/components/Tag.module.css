@@ -1,0 +1,20 @@
+.root {
+    display: inline-flex;
+    width: fit-content;
+    height: fit-content;
+    text-transform: uppercase;
+    font-size: 75%;
+    padding: var(--rp-padding-min) var(--rp-padding-max);
+    border-radius: var(--rp-border-radius);
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    align-items: center;
+}
+
+.root.pill {
+    border-radius: 0.7em;
+}
+
+.root:focus {
+    outline: var(--row-picker-border-width) solid var(--row-picker-border);
+}

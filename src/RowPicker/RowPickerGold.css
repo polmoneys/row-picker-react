@@ -1,0 +1,33 @@
+html.gold-theme {
+    /* #8c7851 */
+    accent-color: #716040;
+    --accent: #716040;
+
+    --bg: #fffffe;
+    --bg-hover: #eaddcf;
+    --bg-focus: #eaddcf;
+    background-color: #f9f4ef;
+
+    --color: #020826;
+    --color-light: var(--white);
+    --color-hover: var(--gray-400);
+    --color-focus: var(--gray-400);
+
+    --border-color: var(--gray-400);
+    --border-color-hover: var(--gray-400);
+}
+html.gold-theme body {
+    background-color: #f9f4ef;
+}
+html.gold-theme [rp-data-avatar] {
+    background: linear-gradient(#000 0 0) padding-box, linear-gradient(#8c7851, #716040) border-box;
+}
+
+html.gold-theme svg.fx-brightness {
+    filter: none !important;
+}
+
+html.gold-theme [data-donut=''] {
+    --c: #716040 !important;
+    filter: none !important;
+}
