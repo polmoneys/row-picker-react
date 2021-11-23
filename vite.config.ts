@@ -16,31 +16,31 @@ export default defineConfig((configEnv) => ({
         // https://github.com/TheSwordBreaker/vite-reactts-eslint-prettier/blob/main/.eslintrc.js
         // }),
     ],
-    // build: {
-    //     outDir: 'docs',
-    // },
     build: {
-        lib: {
-            entry: path.resolve(_dirname, 'RowPicker/index.tsx'),
-            name: 'RowPicker',
-            fileName: (format) => `row-picker.${format}.js`,
-        },
-        rollupOptions: {
-            external: [
-                'react',
-                'react-dom',
-                'lodash.isnil',
-                'react-icons',
-                '@react-aria/focus',
-                '@react-aria/interactions',
-                '@headlessui/react',
-                '@reach/checkbox',
-            ],
-            output: {
-                globals: {
-                    react: 'React',
-                },
-            },
-        },
+        outDir: 'docs',
     },
+    // build: {
+    //     lib: {
+    //         entry: path.resolve(_dirname, 'RowPicker/index.tsx'),
+    //         name: 'RowPicker',
+    //         fileName: (format) => `row-picker.${format}.js`,
+    //     },
+    //     rollupOptions: {
+    //         external: [
+    //             'react',
+    //             'react-dom',
+    //             'lodash.isnil',
+    //             'react-icons',
+    //             '@react-aria/focus',
+    //             '@react-aria/interactions',
+    //             '@headlessui/react',
+    //             '@reach/checkbox',
+    //         ],
+    //         output: {
+    //             globals: {
+    //                 react: 'React',
+    //             },
+    //         },
+    //     },
+    // },
 }));
