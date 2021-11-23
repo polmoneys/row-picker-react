@@ -2,9 +2,9 @@
 
 A **RowPicker** for React with minimalistic surface. Sort of the core of a DataGrid or Table that you can ammend, strip and replace the parts you feel should be different. 
 
-## Quick start
+## How to 
 
-Add **useRowPicker** with the datum you wish to display and render the component it returns. Instant Profit. 
+Feed **useRowPicker** hook with the datum you wish to display and render the component it returns. Instant Profit. 
 
 ```js
 
@@ -36,6 +36,12 @@ return(
 
 ```
 
+Available as npm module.
+
+```bash
+npm i row-picker-react
+```
+
 ## State
 
 Display current state of RowPicker to the user in any flavour you'd like. There is a [demo](https://codesandbox.com) of that. 
@@ -63,7 +69,6 @@ function Page(props:Props) {
 ```
 
 ## Props
-
 
 Minimalist surface `!==` small surface. Priorities are accessibilty `>` perf `>` dx 
 
@@ -163,8 +168,6 @@ formatter: (input: Date) => formatDate(input),
 
 A generic `T` that should contain `{id:string}`. Any boolean value will be `toString()-ed`. Any Date by default will be `.toDateString()-ed`.
 
-
-
 ## Toolbar 
 
 You can take **state** and display it to the user without limitations of any kind.
@@ -207,15 +210,13 @@ You can take **state** and display it to the user without limitations of any kin
 
 ```
 
-## Styles 
+## Customizations
+
+Instead of using it as a library copy paste files on your project and:
 
 You should look at `theme.css` as it contains mostly CSS custom properties you can customize. 
 
-## Utils 
-
 Some hooks might already be on your project so feel free to trim them out of existence and use your own. 
-
-## Icons 
 
 Swap on `Icon.tsx` the desired SVG to render instead of current and you are golden. 
 
