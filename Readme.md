@@ -44,7 +44,7 @@ npm i row-picker-react
 
 ## State
 
-Display current state of RowPicker to the user in any flavour you'd like. There is a [demo](https://codesandbox.com) of that. 
+Display current state of RowPicker to the user in any flavour you'd like. 
 
 ```js
 
